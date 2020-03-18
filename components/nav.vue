@@ -23,8 +23,10 @@ export default {};
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  border-bottom: 1px solid red;
 }
 a {
+  text-decoration: none;
   padding: 5px;
 }
 </style>
