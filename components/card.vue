@@ -14,10 +14,11 @@ export default {
 </script>
 <style>
 .card {
+  min-width: 200px;
   font-size: 14px;
   color: purple;
   box-shadow: 0px 2px 5px purple;
-  padding: 10px;
+  padding: 30px;
   margin: 10px;
 }
 .name {

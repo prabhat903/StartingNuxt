@@ -45,25 +45,23 @@ const users = [
 ];
 
 const getUsers = function() {
-  return deBounce(
-    users.map(ele => {
+  return deBounce(() => {
+    return users.map(ele => {
       return {
         id: ele.id,
         first_name: ele.first_name,
         last_name: ele.last_name
       };
-    }),
-    5000
-  );
+    });
+  }, 200);
 };
 
 const getUser = function(userId) {
-  return deBounce(
-    users.filter(ele => {
-      return ele.id === userId;
-    })[0],
-    2000
-  );
+  return deBounce(() => {
+    return users.filter(ele => {
+      return ele.id === Number(userId);
+    })[0];
+  }, 500);
 };
 
 const deBounce = (callback, time) => {
