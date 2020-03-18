@@ -1,13 +1,18 @@
 <template>
   <div>
-    <h1>{{userId}}</h1>
+    <h1>{{user}}</h1>
   </div>
 </template>
 <script>
 export default {
   head() {
     return {
-      title: "Another"
+      title: `user page ${this.user.name}`
+    };
+  },
+  data() {
+    return {
+      user: null
     };
   },
   created() {},
