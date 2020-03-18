@@ -1,0 +1,2 @@
+# StartingNuxt
+Created with CodeSandbox
