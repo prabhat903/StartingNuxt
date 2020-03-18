@@ -5,7 +5,7 @@
     </nuxt-link>
     <nav>
       <nuxt-link to="/">Home</nuxt-link>
-      <nuxt-link to="/another">Another</nuxt-link>
+      <nuxt-link to="/users">Users</nuxt-link>
     </nav>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Welcome Another</h1>
+    <h1>{{userId}}</h1>
   </div>
 </template>
 <script>
@@ -9,6 +9,12 @@ export default {
     return {
       title: "Another"
     };
+  },
+  created() {},
+  computed: {
+    userId() {
+      return this.$route.params.userId;
+    }
   }
 };
 </script>
