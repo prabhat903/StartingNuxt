@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>{{user}}</h1>
+    <h1>{{user.name}}</h1>
   </div>
 </template>
 <script>
@@ -12,7 +12,7 @@ export default {
   },
   data() {
     return {
-      user: null
+      user: {}
     };
   },
   created() {},

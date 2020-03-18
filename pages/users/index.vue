@@ -12,6 +12,7 @@
 </template>
 <script>
 import card from "~/components/card";
+import { getUsers } from "~/store";
 export default {
   head() {
     return {
@@ -20,11 +21,13 @@ export default {
   },
   data() {
     return {
-      userList: [
-        { name: "abhishek", id: "user1" },
-        { name: "Naresh", id: "user2" }
-      ]
+      userList: []
     };
+  },
+  created() {
+    getUsers().then(data => {
+      this.userList = data;
+    });
   },
   components: {
     card
