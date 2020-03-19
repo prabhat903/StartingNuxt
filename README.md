@@ -1,7 +1,3 @@
-# codesandbox-nuxt
-
-> Nuxt starter for CodeSandBox (used for https://template.nuxtjs.org)
-
 ## Build Setup
 
 ``` bash
