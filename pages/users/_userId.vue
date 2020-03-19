@@ -3,6 +3,7 @@
     <h1>{{user.first_name}} {{user.last_name}}</h1>
     <img :src="user.avatar">
     <h3>{{user.email}}</h3>
+    <button @click="returnBack">Back</button>
   </div>
 </template>
 <script>
@@ -27,6 +28,9 @@ export default {
     userId() {
       return this.$route.params.userId;
     }
+  },
+  methods: {
+    returnBack() {}
   }
 };
 </script>

@@ -14,6 +14,7 @@
 import card from "~/components/card";
 import { getUsers } from "~/store";
 export default {
+  layout: "full",
   head() {
     return {
       title: "Another"
