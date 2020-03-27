@@ -30,7 +30,9 @@ export default {
     }
   },
   methods: {
-    returnBack() {}
+    returnBack() {
+      // this.$route.methods
+    }
   }
 };
 </script>

@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <header>From header</header>
+    <app-header>From header</app-header>
     <Nuxt/>
   </div>
 </template>
 <script>
-import header from "~/components/header.vue";
+import appHeader from "~/components/appHeader.vue";
 export default {
   components: {
-    header
+    appHeader
   },
   head() {
     return {
